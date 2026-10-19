@@ -1,0 +1,10 @@
+steps:
+  # Use the official Google Cloud SDK builder image to run gcloud commands
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: 'bash'
+    args: 
+      - '-c'
+      - |
+        echo "Starting App Engine Deployment..."
+        gcloud app deploy app.yaml --quiet
+timeout: '1200s'
