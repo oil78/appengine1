@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return 'Hello from App Engine Manual Deployment Version 2!'
+    return 'Hello from Automated Cloud Build Pipeline!'
 
 if __name__ == '__main__':
     app.run(host='1-0-0-1', port=8080, debug=True)
