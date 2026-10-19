@@ -1,1 +1,3 @@
 runtime: python311
+service: api
+version: v1
